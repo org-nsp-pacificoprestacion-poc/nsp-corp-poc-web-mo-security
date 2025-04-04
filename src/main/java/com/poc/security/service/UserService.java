@@ -15,6 +15,13 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        return userRepository.findAll();
+        var users= userRepository.findAll();
+        for (User user : users) {
+            System.out.println("User email: " + user.getEmail());
+        }
+        return users;
+    }
+    public User getUsersByEmail(String email) {
+        return userRepository.findByEmailWithInjection(email);
     }
 }
