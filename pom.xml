@@ -67,7 +67,7 @@
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
-			<version>3.2.1</version> <!-- Vulnerable -->
+			<version>3.2.2</version> <!-- Vulnerable -->
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
